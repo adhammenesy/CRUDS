@@ -1,0 +1,123 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to left, #360033, #0b8793) !important; 
+    color: #222831;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    color: #00ADB5;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    animation: fadeIn 1s ease-in-out;
+    transition: color 0.3s ease-in-out, font-size 0.3s ease-in-out;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #fcfdff;
+    transition: font-size 0.3s ease-in-out, margin-bottom 0.3s ease-in-out;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #222831;
+    border-radius: 0.25rem;
+    transition:.2s;
+}
+
+.form-group input:focus {
+    border-color: #00ADB5;
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 0.75rem;
+    margin-top: 1rem;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: 0.3s
+}
+
+button.btn-outline-info {
+    background-color: #00ADB5;
+    color: #fff;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+button.btn-outline-info:hover {
+    background-color: #007BFF;
+}
+
+button.btn-outline-danger {
+    background-color: #e57373;
+    color: #fff;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+button.btn-outline-danger:hover {
+    background-color: #dc3545;
+}
+
+button.btn-outline-warning {
+    background-color: #ffc107;
+    color: #267dd4;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+button.btn-outline-warning:hover {
+    background-color: #fd7e14;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 2rem;
+    animation: fadeIn 1s ease-in-out;
+    transition: margin-top 0.3s ease-in-out;
+    color: #ffffff;
+}
+
+table th, table td {
+    padding: 0.75rem;
+    text-align: left;
+    border: 1px solid #ffffff;
+    transition: padding 0.3s ease-in-out, border 0.3s ease-in-out;
+}
+
+table th {
+    background-color: #616161;
+    font-weight: bold;
+    color: #ffffff;
+    transition: background-color 0.3s ease-in-out, font-weight 0.3s ease-in-out;
+}
+
+table tbody tr:nth-child(odd) {
+    background-color: #616161 ;
+    color: #ffffff;
+    transition: background-color 0.3s ease-in-out;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #616161;
+    color: #ffffff;
+    transition: background-color 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

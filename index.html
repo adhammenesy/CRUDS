@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUDS</title>
+    <link rel="stylesheet" href="./Css/bootstrap.min.css">
+    <link rel="stylesheet" href="./Css/style.css">
+
+</head>
+<body>
+    <div class="w-50 mx-auto py-5">
+        <h1>Product mangament system</h1>
+        <div class="text-center mb-4">
+            <img src="./img/logo.png" alt="Logo" class="img-fluid">
+        </div>
+        <div class="form-group mb-3">
+            
+            <label for="ProductName " class="mb-3 fw-bolder fs-5">Product Name:</label> 
+            <input type="text" id="ProductName"  class=" form-control">
+
+        </div>
+        <div class="form-group mb-3">
+            <label for="ProductPrice" class="mb-3 fw-bolder fs-5">ProductPrice</label>
+            <input type="number" id="ProductPrice" class=" form-control">
+        </div>
+        <div class="form-group mb-3">
+            <label for="ProductCate" class="mb-3 fw-bolder fs-5">ProductCate</label>
+            <input type="text" id="ProductCate" class=" form-control">
+        </div>
+        <div class="form-group mb-3">
+            <label for="ProductDesc" class="mb-3 fw-bolder fs-5">ProductDesc</label>
+            <input type="text" id="ProductDesc" class=" form-control">
+        </div>
+        <button type="submit" id="mainBtn" class=" btn btn-outline-info" onclick="addProduct()">AddProduct</button>
+        <button type="reset" id="mainBtn" class=" btn btn-outline-danger" onclick="reset()">Reset</button>
+
+    </div>
+
+    <div class="w-50 mx-auto mb-5">
+      <label for="Search">Search</label>
+      <input type="search" id="Search"class="form-control">
+    </div>
+<div class="w-50 mx-auto">
+    <table class="table">
+        <thead>
+            <th>index</th>
+            <th>ProductName</th>
+            <th>ProductPrice</th>
+            <th>ProductCate</th>
+            <th>ProductDesc</th>
+            <th>Update</th>
+            <th>Delete</th>
+
+        </thead>
+        <tbody id="tbody">
+        </tbody>
+    </table>
+</div>
+    <script src="Js/bootstrap.bundle.min.js"></script>
+    <script src="Js/script.js"></script>
+</body>
+</html>
+
